@@ -1,0 +1,38 @@
+// design guide
+
+// background color of the 3 pages
+$bg-color-page-one: linear-gradient(117.53deg, #000000 0.82%, rgba(43, 43, 43, 0.541) 97.95%);
+
+$bg-color-page-two: hsla(0, 0%, 15%, 1);
+
+// page 3 have 3 diffrent colors
+$bg-primary-color: hsla(0, 0%, 0%, 1);
+
+$bg-primary-color-2: hsla(360, 9%, 5%, 1);
+
+$bg-secondary-color: hsla(0, 0%, 11%, 1);
+
+// font color
+$font-color-primary: linear-gradient(266.17deg, rgba(212, 9, 9, 0.97) 13.82%, #2E0E89 91.15%);
+
+$font-color-secondary: #fff;
+
+ // shadow
+ $shadow: 0px 4px 100px 50px rgba(0, 0, 0, 0.25);
+
+
+*,::before,
+::after{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem is equal to 10px 
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $bg-color-page-two ;
+}

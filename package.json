@@ -1,0 +1,11 @@
+{
+  "name": "project-netto",
+  "version": "1.0.0",
+  "description": "multi page orignal design with html and css only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abdurahman M.M",
+  "license": "ISC"
+}
