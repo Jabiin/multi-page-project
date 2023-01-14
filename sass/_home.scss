@@ -31,6 +31,16 @@ header {
      "nav nav  icon"
      "text text  icon"
     ;
+    @media only screen and (max-width: $bp-mobile){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 10rem 70rem 1fr);
+        grid-template-areas:
+        "nav nav"
+        "text"
+        "icon"
+       ;
+
+    }
 
     height: 100vh;
     width: 100%;
@@ -42,7 +52,13 @@ header {
          .header__title{
     font-size: 15rem;
     line-height: 14rem;
+    @media only screen and (max-width: $bp-mobile){
+        font-size: 10rem;
+        line-height: 10rem;
+    }
+
     @include gardient
+ 
    }
     }
   

@@ -27,6 +27,9 @@
 }
   
    h1{
+    @media only screen and (max-width: $bp-mobile){
+        height: 30vh;
+    }
     @include gardient;
     font-size: 3rem;
     font-weight: 700;
@@ -48,6 +51,13 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 10rem;
     row-gap: 5rem;
+
+    @media only screen and (max-width: $bp-mobile){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        gap: 1rem;
+        height: 120vh;
+    }
 }
 .img__box-one{
     background-image: url(https://images.unsplash.com/photo-1670854753247-2df22e4a4a84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
@@ -138,5 +148,8 @@
     a{
         @include anchor;
     }
-    
+    @media only screen and (max-width: $bp-mobile){
+        align-items: flex-end;
+        height: 5vh;
+    }
    }
